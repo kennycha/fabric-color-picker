@@ -8,7 +8,7 @@ import {
   PiPolygon,
 } from "react-icons/pi";
 
-const SNAPSHOT_IMAGE_URL = "fabric-color-picker/images/sample_snapshot.jpg";
+const SNAPSHOT_IMAGE_URL = "/fabric-color-picker/images/sample_snapshot.jpg";
 
 const DEFAULT_RENDERER_WIDTH = 960;
 const DEFAULT_RENDERER_HEIGHT = 540;
