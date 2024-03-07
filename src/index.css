@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+}
+
+.canvas-container {
+  position: relative;
+  border: 1px dashed gray;
+  width: calc(960px + 2 * 1px);
+  height: calc(540px + 2 * 1px);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 960px;
+  height: 540px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 960px;
+  height: 540px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  > button {
+    background-color: white;
+    padding: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
